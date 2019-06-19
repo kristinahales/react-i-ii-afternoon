@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.blue-header {
+    background: rgba(22, 22, 214, 0.932);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+}
+
+.header-text {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 90px;
+}
+
+.gray-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background: rgb(46, 44, 44);
+}
+
+.white-container {
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50vw;
+    height: 500px;
+}  
+
+.first {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.second {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.third {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.fourth {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.five {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.six {
+    margin-left: 50px;
+}
+
+.seven {
+    margin-top: 200px;
+}
+
+.footer {
+    background: rgb(46, 44, 44);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100vw;
+    height: 200px;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    
+}
