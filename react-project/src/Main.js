@@ -14,24 +14,28 @@ class Main extends Component {
     }
 
     previous() {
-        let iCopy = this.state.i + 1
-        this.setState({
-            i: iCopy
-        })
+        if (this.state.i > 0) {
+            this.setState({ i: this.state.i - 1 });
+        } else if(this.state.i = -1){
+            this.setState({i: this.state.i = 24})
+        }
     }
-
+    
     next() {
-        let iCopy = this.state.i - 1
-        this.setState({
-            i: iCopy
-        })
-    }
+        if (this.state.i < 24) {
+            this.setState({ i: this.state.i + 1 });
+        } else if(this.state.i = 25 ) {
+            this.setState({i: this.state.i = 0})
+        }
+}
+    
 
     render() {
         return (
             <div>
                 <div className="gray-container">
                     <main className="white-container">
+                        <div>{data[this.state.i].id}/{data.length}</div>
                         <div className="first">{data[this.state.i].name.first} {data[this.state.i].name.last}</div>
                         <div className="second">From: {data[this.state.i].city} {data[this.state.i].country}</div>
                         <div className="third">Employer: {data[this.state.i].employer}</div>
@@ -44,8 +48,8 @@ class Main extends Component {
 
                 </div>
                 <footer className='footer'>
-                    <button onClick={this.previous}>Previous</button>
-                    <button onClick={this.next}>Next</button>
+                    <button onClick={this.previous}> &#60; Previous</button>
+                    <button onClick={this.next}>Next ></button>
                 </footer>
 
             </div>
